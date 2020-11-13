@@ -1,0 +1,52 @@
+.search {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem 20px;
+}
+
+.search-input {
+  display: grid;
+  width: 95vw;
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+  grid-column: 5;
+}
+
+.form-group {
+  text-align: left;
+  letter-spacing: var(--mainSpacing);
+}
+
+.form-group * {
+  width: 100%;
+  padding: 3px 0;
+  margin: 8px 0;
+}
+
+.form-group-size {
+  text-align: left;
+  letter-spacing: var(--mainSpacing);
+}
+
+.form-group-size input {
+  width: 40%;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.form-group-checkbox {
+  text-align: left;
+  letter-spacing: var(--mainSpacing);
+}
+
+.form-group-checkbox label {
+  margin: 10px 5px;
+  font-size: 12.8px;
+}
+
+.single-extra {
+  margin-top: 10px;
+}

@@ -1,0 +1,12 @@
+.room-list {
+  width: 95vw;
+  padding: 5rem 20px;
+  margin: 0 auto;
+}
+
+.room-list-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 50px;
+}

@@ -1,0 +1,36 @@
+.banner {
+  background: rgba(1, 1, 1, 0.5);
+  padding: 32px 48px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.banner div {
+  width: 9rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  letter-spacing: 3px;
+}
+
+.btn-primary {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 990px) {
+  .banner {
+    padding: 32px 120px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+}
