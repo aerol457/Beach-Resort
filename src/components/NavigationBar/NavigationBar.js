@@ -4,7 +4,7 @@ import { FaAlignRight } from "react-icons/fa";
 import "./NavigationBar.css";
 import Logo from "../../images/logo.svg";
 
-const navigationBar = () => {
+const navigationBar = ({ showNav, onToggleNav }) => {
   return (
     <div className="navbar">
       <div className="nav-center">
@@ -12,11 +12,11 @@ const navigationBar = () => {
           <a href="/">
             <img src={Logo} alt="Beach Resort" />
           </a>
-          <button className="nav-icon nav-btn">
+          <button className="nav-icon nav-btn" onClick={onToggleNav}>
             <FaAlignRight />
           </button>
         </div>
-        <ul className="nav-links show-nav">
+        <ul className={showNav ? "nav-links show-nav" : "nav-links"}>
           <li>
             <a href="/">Home</a>
           </li>
