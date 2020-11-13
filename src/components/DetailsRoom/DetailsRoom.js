@@ -20,7 +20,7 @@ const DetailsRoom = ({ room }) => {
         </div>
         <div className="details-room-info">
           <h2>Info</h2>
-          <p>Price : {room.price}</p>
+          <p>Price : ${room.price}</p>
           <p>Size : {room.size} SQFT</p>
           <p>Max Capacity :{room.capacity} Person</p>
           <p>{!room.pets && <span>No</span>} Pets Allowed</p>

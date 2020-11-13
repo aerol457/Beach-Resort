@@ -1,4 +1,5 @@
 import React, { useEffect, useContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 import StyledHero from "../components/StyledHero/StyledHero";
 import Banner from "../components/Banner/Banner";
@@ -14,19 +15,28 @@ const SingleRoom = (props) => {
   }, [props, room, contextRooms.rooms]);
 
   return (
-    <div>
-      {room && (
-        <StyledHero img={room.images[0]}>
-          <Banner
-            title="Single Economy Room"
-            subTitle=""
-            buttonTitle="BACK TO ROOMS"
-            buttonLink="/rooms"
-          />
-        </StyledHero>
+    <>
+      {room ? (
+        <div>
+          <StyledHero img={room.images[0]}>
+            <Banner
+              title="Single Economy Room"
+              subTitle=""
+              buttonTitle="BACK TO ROOMS"
+              buttonLink="/rooms"
+            />
+          </StyledHero>
+          <DetailsRoom room={room} />
+        </div>
+      ) : (
+        <div style={{ textAlign: "center", marginTop: 100 }}>
+          <p style={{ fontWeight: "bold" }}>NO SUCH ROOM COULD BE FOUND...</p>
+          <Link className="btn-primary" to="/rooms">
+            BACK TO ROOMS
+          </Link>
+        </div>
       )}
-      {room && <DetailsRoom room={room} />}
-    </div>
+    </>
   );
 };
 
